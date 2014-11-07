@@ -1,2 +1,5 @@
 # The build.
 build/
+
+#Node modules
+node_modules/

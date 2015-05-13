@@ -1,5 +1,5 @@
 @mixin display($value) {
-  @if $value == flex {
+  @if $value == inline-flex {
     // http://msdn.microsoft.com/en-us/library/ie/hh673531(v=vs.85).aspx
     display: -ms-inline-flexbox;
 
@@ -8,7 +8,7 @@
     display: inline-flex;
   }
 
-  @else if $value == inline-flex {
+  @else if $value == flex {
     // http://msdn.microsoft.com/en-us/library/ie/hh673531(v=vs.85).aspx
     display: -ms-flexbox;
 
@@ -17,7 +17,7 @@
     display: flex;
   }
 
-  display: value;
+  display: $value;
 }
 
 @mixin flex-direction($direction: row) {
